@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: RosettaConverter
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn converter.wsgi --log-file -
