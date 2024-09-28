@@ -3,4 +3,4 @@ services:
     name: RosettaConverter
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn youtube_to_mp3.wsgi --log-file -
+    startCommand: gunicorn youtube_to_mp3.wsgi:application --log-file -
